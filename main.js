@@ -47,7 +47,7 @@ function atulizaTabela(){
 function atualizaMediaFinal(){
     var mediaFinal = calculaMediaFinal(); /* Chamando a função  "calculaMediaFinal" */
 
-    document.getElementById('media-final-valor').innerHTML = mediaFinal;
+    document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(2);/* toFixed limita as casas decimais apos a virgula */
     document.getElementById('media-final-resultado').innerHTML = mediaFinal >= notaMinima ? spanAprovado : spanReprovado; /* Aplicando o if com "?" e else com ":", puxando as variveis span la do scopo global */
     
 }
